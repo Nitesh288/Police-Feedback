@@ -16,7 +16,7 @@ const getAppUrl = () => {
     case "production":
       return "https://feedback-system-webapp.vercel.app/user/feedback";
     default:
-      return "http://localhost:3000/user/feedback";
+      return "https://police-feedback-git-main-nitesh288s-projects.vercel.app/";
   }
 };
 
