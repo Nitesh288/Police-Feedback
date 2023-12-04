@@ -35,7 +35,7 @@ const FeedBackSystem = () => {
   //selected police station object
   const [selectedPoliceStation, setSelectedPoliceStation] = useState({
     district: "",
-    taluka: "",
+    Circle: "",
     police: "",
   });
 
@@ -43,14 +43,14 @@ const FeedBackSystem = () => {
 
   useEffect(() => {
     const district = searchParams.get("district");
-    const taluka = searchParams.get("taluka");
+    const Circle = searchParams.get("Circle");
     const police = searchParams.get("police");
     district &&
-      taluka &&
+      Circle &&
       police &&
       setSelectedPoliceStation({
         district,
-        taluka,
+        Circle,
         police,
       });
   }, [searchParams]);

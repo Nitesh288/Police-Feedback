@@ -1,136 +1,148 @@
 export const dk = [
   {
-    label: "AHMEDABAD",
-    value: "AHMEDABAD",
-    talukas: [
+    label: "AJMER",
+    value: "AJMER",
+    Circles: [
       {
-        label: "DETROJ",
-        value: "DETROJ",
+        label: "AJMER RURAL",
+        value: "AJMER RURAL",
         stations: [
           {
-            label: "DETROJ POLICE STATION, NEAR MAMLATDAR KACHERI, DETROJ",
-            value: "DETROJ_POLICE_STATION_NEAR_MAMLATDAR_KACHERI_DETROJ",
+            label: "GEGAL",
+            value: "GEGAL",
+          },
+          {
+            label: "MANGLIYAWAS",
+            value: "MANGLIYAWAS",
+          },
+          {
+            label: "PISANGAN",
+            value: "PISANGAN",
+          },
+          {
+            label: "PUSHKAR",
+            value: "PUSHKAR",
           },
         ],
       },
       {
-        label: "DASKROI",
-        value: "DASKROI",
+        label: "DARGAH",
+        value: "DARGAH",
         stations: [
           {
-            label: "KANBHA POLICE STATION, KATHLAL ROAD, KANBHA",
-            value: "KANBHA_POLICE_STATION_KATHLAL_ROAD_KANBHA",
+            label: "DARGAH",
+            value: "DARGAH",
           },
           {
-            label: "Police station22",
-            value: "ps22",
+            label: "GANJ",
+            value: "GANJ",
           },
         ],
       },
       {
-        label: "DHANDHUKA",
-        value: "DHANDHUKA",
+        label: "KISHANGARH",
+        value: "KISHANGARH",
         stations: [
           {
-            label: "CPI OFFICE, TOWER CHOWK PASE, DHANDHUKA",
-            value: "CPI_OFFICE_TOWER_CHOWK_PASE_DHANDHUKA",
+            label: "GANDHI NAGAR",
+            value: "GANDHI NAGAR",
           },
           {
-            label: "DHANDHUKA POLICE STATION, TOWER HOWK, DHANDHUKA",
-            value: "DHANDHUKA_POLICE_STATION_TOWER_HOWK_DHANDHUKA",
+            label: "KISHANGARH",
+            value: "KISHANGARH",
+          },
+          {
+            label: "MADANGANJ",
+            value: "MADANGANJ",
           },
         ],
       },
       {
-        label: "DHOLKA",
-        value: "DHOLKA",
-        stations: [
-          {
-            label:
-              "BAVLA POLICE STATION, BAVLA-DHOLKA ROAD, NEAR RAILWAY FATAK, BAVLA",
-            value:
-              "BAVLA_POLICE_STATION_BAVLA_DHOLKA_ROAD_NEAR_RAILWAY_FATAK_BAVLA",
-          },
-          {
-            label: "DHOLKA POLICE STATION, MAMLATDAR KACHERI COMPOUND, DHOLKA",
-            value: "DHOLKA_POLICE_STATION_MAMLATDAR_KACHERI_COMPOUND_DHOLKA",
-          },
-          {
-            label: "DHOLERA POLICE STATION, DHOLERA",
-            value: "DHOLERA_POLICE_STATION_DHOLERA",
-          },
-        ],
-      },
-      {
-        label: "BARVALA",
-        value: "BARVALA",
-        stations: [
-          {
-            label: "BARVALA POLICE STATION, BARVAL",
-            value: "BARVALA_POLICE_STATION_BARVAL",
-          },
-        ],
-      },
-      {
-        label: "MANDAL",
-        value: "MANDAL",
-        stations: [
-          {
-            label: "MANDAL POLICE STATION, MANDAL",
-            value: "MANDAL_POLICE_STATION_MANDAL",
-          },
-        ],
-      },
-      {
-        label: "RANPUR",
-        value: "RANPUR",
-        stations: [
-          {
-            label: "RANPUR POLICE STATION, RANPUR",
-            value: "RANPUR_POLICE_STATION_RANPUR",
-          },
-        ],
-      },
-      {
-        label: "VIRAMGAM",
-        value: "VIRAMGAM",
+        label: "KISHANGARH RURAL",
+        value: "KISHANGARH RURAL",
         stations: [
           {
             label:
-              "SANAND POLICE STATION, VIRAMGAM HIHGWAY ROAD, NEAR MAMLATDAR NI KACHERI",
+              "ARIAN",
             value:
-              "SANAND_POLICE_STATIO_VIRAMGA_HIHGWAY_ROAD_NEA_MAMLATDAR_NI_KACHERI",
+              "ARIAN",
           },
           {
-            label: "VIRAMGAM POLICE STATION, NEAR TOWER, VIRAMGAM",
-            value: "VIRAMGAM_POLICE_STATION_NEAR_TOWER_VIRAMGAM",
+            label: "BANDER SINDRI",
+            value: "BANDER SINDRI",
           },
           {
-            label: "VIRAMGAM RURAL POLICE STATION, NEAR TOWER,VIRAMGAM",
-            value: "VIRAMGAM_RURAL_POLICE_STATION_NEAR_TOWER_VIRAMGAM",
+            label: "RUPANGARH",
+            value: "RUPANGARH",
           },
         ],
       },
       {
-        label: "SANAND",
-        value: "SANAND",
+        label: "NASEERABAD",
+        value: "NASEERABAD",
         stations: [
           {
-            label: "SARKHEJ POLICE STATION, NEAR AMTS BUS STAND, SARKHEJ",
-            value: "SARKHEJ_POLICE_STATION_NEAR_AMTS_BUS_STAND_SARKHEJ",
+            label: "NASEERABAD CITY",
+            value: "NASEERABAD CITY",
           },
           {
-            label: "KOTH POLICE STATION, NEAR POST OFFICE, KOTH",
-            value: "KOTH_POLICE_STATION_NEAR_POST_OFFICE_KOTH",
+            label: "NASEERABAD SADAR",
+            value: "NASEERABAD SADAR",
+          },
+          {
+            label: "SHRI NAGAR",
+            value: "SHRI NAGAR",
           },
         ],
       },
+      {
+        label: "NORTH",
+        value: "NORTH",
+        stations: [
+          {
+            label: "CIVIL LINES",
+            value: "CIVIL LINES",
+          },
+          {
+            label: "KOTWALI AJMER",
+            value: "KOTWALI AJMER",
+          },
+          {
+            label: "MAHILA PS",
+            value: "MAHILA PS",
+          },
+        ],
+      },
+      {
+        label: "SOUTH",
+        value: "SOUTH",
+        stations: [
+          {
+            label: "ADARSH NAGAR",
+            value: "ADARSH NAGAR",
+          },
+          {
+            label: "AJMER GATE",
+            value: "AJMER GATE",
+          },
+          {
+            label: "CLOCK TOWER",
+            value: "CLOCK TOWER",
+          },
+          {
+            label: "RAMGANJ",
+            value: "RAMGANJ",
+          },
+        ],
+      },
+      
+      
     ],
   },
   {
     label: "AHMEDABAD CITY",
     value: "AHMEDABAD_CITY",
-    talukas: [
+    Circles: [
       {
         label: "AHMEDABAD CITY",
         value: "AHMEDABAD_CITY",
@@ -148,12 +160,12 @@ export const dk = [
             value: "SHAHIBAG_POLICE_STATION_NEAR_SHAHIBAG_UNDERBIDGE",
           },
           {
-            label: "SHAPUR POLICE STATION, SHAPURT BAHI STATION,AHMEDABAD",
-            value: "SHAPUR_POLICE_STATION_SHAPURT_BAHI_STATION_AHMEDABAD",
+            label: "SHAPUR POLICE STATION, SHAPURT BAHI STATION,AJMER",
+            value: "SHAPUR_POLICE_STATION_SHAPURT_BAHI_STATION_AJMER",
           },
           {
-            label: "SHAR KOTDA POLICE STATION, SARSPUR , AHMEDABAD",
-            value: "SHAR_KOTDA_POLICE_STATION_SARSPUR_AHMEDABAD",
+            label: "SHAR KOTDA POLICE STATION, SARSPUR , AJMER",
+            value: "SHAR_KOTDA_POLICE_STATION_SARSPUR_AJMER",
           },
           {
             label:
@@ -253,8 +265,8 @@ export const dk = [
         value: "ALLICEBRIDGE_PALDI_FATEHPURA",
         stations: [
           {
-            label: "ALLICEBRIDGE POLICE STATION, OPP.TOWN HALL, AHMEDABAD",
-            value: "ALLICEBRIDGE_POLICE_STATION_OPP_TOWN_HALL_AHMEDABAD",
+            label: "ALLICEBRIDGE POLICE STATION, OPP.TOWN HALL, AJMER",
+            value: "ALLICEBRIDGE_POLICE_STATION_OPP_TOWN_HALL_AJMER",
           },
         ],
       },
@@ -329,18 +341,18 @@ export const dk = [
             value: "NARODA_POLICE_STATION_NARODA_HIGHWAY",
           },
           {
-            label: "NARANPURA POLICE STATION, NEAR AKHARBARNAGAR UNDERBRIDGE",
-            value: "NARANPURA_POLICE_STATION_NEAR_AKHARBARNAGAR_UNDERBRIDGE",
+            label: "NASOUTHA POLICE STATION, NEAR AKHARBARNAGAR UNDERBRIDGE",
+            value: "NASOUTHA_POLICE_STATION_NEAR_AKHARBARNAGAR_UNDERBRIDGE",
           },
         ],
       },
       {
-        label: "NARANPURA",
-        value: "NARANPURA",
+        label: "NASOUTHA",
+        value: "NASOUTHA",
         stations: [
           {
-            label: "NARANPURA POLICE STATION, NEAR AKHARBARNAGAR UNDERBRIDGE",
-            value: "NARANPURA_POLICE_STATION_NEAR_AKHARBARNAGAR_UNDERBRIDGE",
+            label: "NASOUTHA POLICE STATION, NEAR AKHARBARNAGAR UNDERBRIDGE",
+            value: "NASOUTHA_POLICE_STATION_NEAR_AKHARBARNAGAR_UNDERBRIDGE",
           },
           {
             label: "AMRAIWADI POLICE STATION, AMRAIWADI GAM",
@@ -363,14 +375,14 @@ export const dk = [
   {
     label: "AMRELI",
     value: "AMRELI",
-    talukas: [
+    Circles: [
       {
         label: "AMRELI",
         value: "AMRELI",
         stations: [
           {
-            label: "AMRELI TALUKA POLICE STATION NEAR BUS STOP AMRELI",
-            value: "AMRELI_TALUKA_POLICE_STATION_NEAR_BUS_STOP_AMRELI",
+            label: "AMRELI Circle POLICE STATION NEAR BUS STOP AMRELI",
+            value: "AMRELI_Circle_POLICE_STATION_NEAR_BUS_STOP_AMRELI",
           },
           {
             label: "CHALALA POLICE STATION DISTT AMRELI",
@@ -463,7 +475,7 @@ export const dk = [
   {
     label: "BANASKANTHA",
     value: "BANASKANTHA",
-    talukas: [
+    Circles: [
       {
         label: "BANASKANTHA",
         value: "BANASKANTHA",
@@ -519,8 +531,8 @@ export const dk = [
             value: "PALANPUR_CITY_POLICE_STATION",
           },
           {
-            label: "PALANPUR TALUKA POLICE STATION",
-            value: "PALANPUR_TALUKA_POLICE_STATION",
+            label: "PALANPUR Circle POLICE STATION",
+            value: "PALANPUR_Circle_POLICE_STATION",
           },
         ],
       },
@@ -549,7 +561,7 @@ export const dk = [
   {
     label: "ANAND",
     value: "ANAND",
-    talukas: [
+    Circles: [
       {
         label: "ANAND",
         value: "ANAND",
@@ -661,7 +673,7 @@ export const dk = [
   {
     label: "BHARUCH",
     value: "BHARUCH",
-    talukas: [
+    Circles: [
       {
         label: "BHARUCH",
         value: "BHARUCH",
@@ -737,9 +749,9 @@ export const dk = [
         stations: [
           {
             label:
-              "BHARUCH POLICE STATION, MAKTAMPURA TALUKA POLICE STATION, MAKTAMPURA ROAD",
+              "BHARUCH POLICE STATION, MAKTAMPURA Circle POLICE STATION, MAKTAMPURA ROAD",
             value:
-              "BHARUCH_POLICE_STATION_MAKTAMPURA_TALUKA_POLICE_STATION MAKTAMPURA_ROAD",
+              "BHARUCH_POLICE_STATION_MAKTAMPURA_Circle_POLICE_STATION MAKTAMPURA_ROAD",
           },
         ],
       },
@@ -768,8 +780,8 @@ export const dk = [
         value: "VAGARA",
         stations: [
           {
-            label: "VAGRA POLICE STATION, TALUKA PANCHAYAT NI BAJUMA, VAGHARA",
-            value: "VAGRA_POLICE_STATION,_TALUKA_PANCHAYAT_NI_BAJUMA_VAGHARA",
+            label: "VAGRA POLICE STATION, Circle PANCHAYAT NI BAJUMA, VAGHARA",
+            value: "VAGRA_POLICE_STATION,_Circle_PANCHAYAT_NI_BAJUMA_VAGHARA",
           },
         ],
       },
@@ -778,7 +790,7 @@ export const dk = [
   {
     label: "BHAVNAGAR",
     value: "BHAVNAGAR",
-    talukas: [
+    Circles: [
       {
         label: "BHAVNAGAR",
         value: "BHAVNAGAR",
@@ -902,7 +914,7 @@ export const dk = [
 ];
 
 // export const districts = [
-//   "Ahmedabad",
+//   "AJMER",
 //   "Amreli",
 //   "Anand",
 //   "Aravalli",

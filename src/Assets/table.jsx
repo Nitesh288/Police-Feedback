@@ -28,10 +28,10 @@ const Table = ({ dataFile, handleSort }) => {
             District
           </th>
           <th
-            onClick={() => handleSort("selectedPoliceStation.taluka")}
+            onClick={() => handleSort("selectedPoliceStation.Circle")}
             style={{ cursor: "pointer" }}
           >
-            Taluka
+            Circle
           </th>
           <th
             onClick={() => handleSort("selectedPoliceStation.police")}
@@ -50,7 +50,7 @@ const Table = ({ dataFile, handleSort }) => {
             <td>
               {item?.selectedPoliceStation?.district?.split("_").join(" ")}
             </td>
-            <td>{item?.selectedPoliceStation?.taluka?.split("_").join(" ")}</td>
+            <td>{item?.selectedPoliceStation?.Circle?.split("_").join(" ")}</td>
             <td>{item?.selectedPoliceStation?.police?.split("_").join(" ")}</td>
             <td>{item?.createdAt?.toDate().toDateString()}</td>
           </tr>

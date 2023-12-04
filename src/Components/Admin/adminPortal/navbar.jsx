@@ -14,7 +14,7 @@ const Navbar = () => {
         <div class="logo-image">
           <img src="/images/Logo.png" alt="" />
         </div>
-        <span class="logo_name">Gujarat Police</span>
+        <span class="logo_name">RAJASTHAN POLICE</span>
       </div>
 
       <div class="menu-items">

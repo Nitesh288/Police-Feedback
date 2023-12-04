@@ -25,17 +25,17 @@ const SelectLanguage = ({
   const [searchParams] = useSearchParams();
 
   const district = searchParams.get("district");
-  const taluka = searchParams.get("taluka");
+  const Circle = searchParams.get("Circle");
   const station = searchParams.get("station");
 
   const onRBSubmit = (res) => {
     onSelectStation({
       district: district,
-      taluka: taluka,
+      Circle: Circle,
       police: station,
     });
 
-    // if (!district && !taluka && !station) {
+    // if (!district && !Circle && !station) {
     //   return alert("please there is issues....");
     // }
 

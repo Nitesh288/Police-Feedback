@@ -8,7 +8,7 @@ const TableStation = ({ dataFile }) => {
           <th>Mobile Number</th>
           <th>Ratings</th>
           <th>District</th>
-          <th>Taluka</th>
+          <th>Circle</th>
           <th>Police_Station</th>
           <th>Date</th>
         </tr>
@@ -22,7 +22,7 @@ const TableStation = ({ dataFile }) => {
             <td>
               {item?.selectedPoliceStation?.district?.split("_").join(" ")}
             </td>
-            <td>{item?.selectedPoliceStation?.taluka?.split("_").join(" ")}</td>
+            <td>{item?.selectedPoliceStation?.Circle?.split("_").join(" ")}</td>
             <td>{item?.selectedPoliceStation?.police?.split("_").join(" ")}</td>
             <td>{item?.createdAt?.toDate().toDateString()}</td>
             {/* <td>{item?.createdAt?.toDate()?.getDay()}</td> */}

@@ -16,7 +16,7 @@ const Table2 = ({ dataFile }) => {
         {dataFile?.map((item) => (
           <tr>
             <td>{item?.district}</td>
-            <td>{item?.taluka}</td>
+            <td>{item?.Circle}</td>
             <td>{item?.station}</td>
             <td>
               <a href={item?.qrValue}>{item?.qrValue}</a>

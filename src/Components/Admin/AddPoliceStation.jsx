@@ -5,7 +5,7 @@ import { addRequest, requestPoliceStation } from "../../firebase/services";
 
 const AddPoliceStation = () => {
   const [district, setDistrict] = useState("");
-  const [taluka, setTaluka] = useState("");
+  const [Circle, setCircle] = useState("");
   const [station, setStation] = useState("");
 
   const navigate = useNavigate();
@@ -17,13 +17,13 @@ const AddPoliceStation = () => {
 
   const handleRequest = async () => {
     // console.log("hello");
-    const requested = await addRequest({ district, taluka, station });
+    const requested = await addRequest({ district, Circle, station });
     navigate("/admin");
     // console.log("bhai request is done....");
   };
 
   // console.log("district :>> ", district);
-  // console.log("taluka", taluka);
+  // console.log("Circle", Circle);
 
   return (
     <>
@@ -59,12 +59,12 @@ const AddPoliceStation = () => {
             <div className="district__taluko">
               <select
                 className="district__taluko1"
-                onChange={(e) => setTaluka(e.target.value)}
+                onChange={(e) => setCircle(e.target.value)}
               >
-                <option value="">Select Taluka</option>
+                <option value="">Select Circle</option>
                 {dk
                   ?.find((obj) => obj?.value === district)
-                  ?.talukas?.map((taluko) => (
+                  ?.Circles?.map((taluko) => (
                     <option value={taluko.value} className="option__forform">
                       {taluko.label}
                     </option>
@@ -72,8 +72,8 @@ const AddPoliceStation = () => {
               </select>
             </div>
           )}
-           <div className="talukaa">
-          {taluka && (
+           <div className="Circlea">
+          {Circle && (
             <input type="text" className = "addPoliceStationn" placeholder="Enter Police Station" onChange={(e) => handleStationValuee(e)} />
           )}
         </div>

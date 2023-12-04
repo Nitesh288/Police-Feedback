@@ -13,7 +13,7 @@ const Content = () => {
   const { data, isLoading } = useFireStore(collections.USERS);
 
   const [district, setDistrict] = useState("");
-  const [taluka, setTaluka] = useState("");
+  const [Circle, setCircle] = useState("");
   const [station, setStation] = useState("");
 
   const [startDate, setStartDate] = useState("");
@@ -98,13 +98,13 @@ const Content = () => {
                 <div className="district__taluko">
                   <select
                     className="district__taluko1"
-                    onChange={(e) => setTaluka(e.target.value)}
+                    onChange={(e) => setCircle(e.target.value)}
                     // disabled={selectedStation}
                   >
-                    <option value="">Select Taluka</option>
+                    <option value="">Select Circle</option>
                     {dk
                       ?.find((obj) => obj?.value === district)
-                      ?.talukas?.map((taluko) => (
+                      ?.Circles?.map((taluko) => (
                         <option
                           value={taluko.value}
                           className="option__forform"
@@ -115,7 +115,7 @@ const Content = () => {
                   </select>
                 </div>
               )}
-              {district && taluka && (
+              {district && Circle && (
                 <div className="district__police">
                   <select
                     className="district__police1"
@@ -125,7 +125,7 @@ const Content = () => {
                     <option value="">Select Station</option>x
                     {dk
                       ?.find((obj) => obj?.value === district)
-                      ?.talukas?.find((obj) => obj?.value === taluka)
+                      ?.Circles?.find((obj) => obj?.value === Circle)
                       ?.stations?.map((police) => (
                         <option
                           value={police.value}
@@ -139,14 +139,14 @@ const Content = () => {
               )}
             </div>
             <div className="activity-data">
-              {taluka && (
+              {Circle && (
                 <table className="styled-table">
                   <thead>
                     <tr>
                       <th>Mobile Number</th>
                       <th>Ratings</th>
                       <th>District</th>
-                      <th>Taluka</th>
+                      <th>Circle</th>
                       <th>Police_Station</th>
                       <th>Date</th>
                     </tr>
@@ -154,7 +154,7 @@ const Content = () => {
                   <tbody>
                     {data
                       ?.filter(
-                        (x) => x?.selectedPoliceStation?.taluka === taluka
+                        (x) => x?.selectedPoliceStation?.Circle === Circle
                       )
                       ?.map((item) => (
                         <tr>
@@ -167,7 +167,7 @@ const Content = () => {
                               .join(" ")}
                           </td>
                           <td>
-                            {item?.selectedPoliceStation?.taluka
+                            {item?.selectedPoliceStation?.Circle
                               ?.split("_")
                               .join(" ")}
                           </td>
@@ -184,7 +184,7 @@ const Content = () => {
                 </table>
               )}
             </div>
-            {taluka && (
+            {Circle && (
               <div className="extra_data">
                 <div className="boxes">
                   <div className="box box1">
@@ -194,7 +194,7 @@ const Content = () => {
                       {
                         data
                           ?.filter(
-                            (x) => x?.selectedPoliceStation?.taluka === taluka
+                            (x) => x?.selectedPoliceStation?.Circle === Circle
                           )
                           .filter((item) => item?.rating >= 4)?.length
                       }
@@ -207,7 +207,7 @@ const Content = () => {
                       {
                         data
                           ?.filter(
-                            (x) => x?.selectedPoliceStation?.taluka === taluka
+                            (x) => x?.selectedPoliceStation?.Circle === Circle
                           )
                           .filter((item) => item?.rating <= 3)?.length
                       }
@@ -219,7 +219,7 @@ const Content = () => {
                     <span className="number number3">
                       {
                         data?.filter(
-                          (x) => x?.selectedPoliceStation?.taluka === taluka
+                          (x) => x?.selectedPoliceStation?.Circle === Circle
                         ).length
                       }
                     </span>

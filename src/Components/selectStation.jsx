@@ -9,14 +9,14 @@ const SelectStation = ({ onNext, onSelectStation, selectedStation }) => {
   const [searchParams] = useSearchParams();
 
   const [district, setDistrict] = useState(searchParams.get("district"));
-  const [taluka, setTaluka] = useState(searchParams.get("taluka"));
+  const [Circle, setCircle] = useState(searchParams.get("Circle"));
   const [station, setStation] = useState(searchParams.get("station"));
 
   useEffect(() => {
     if (selectedStation) {
-      const { district, police, taluka } = selectedStation;
+      const { district, police, Circle } = selectedStation;
       district && setDistrict(district);
-      taluka && setTaluka(taluka);
+      Circle && setCircle(Circle);
       police && setStation(police);
     }
   }, [selectedStation]);
@@ -24,12 +24,12 @@ const SelectStation = ({ onNext, onSelectStation, selectedStation }) => {
   // Handlers Methods
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!district || !taluka) {
+    if (!district || !Circle) {
       return alert("required...");
     }
     onSelectStation({
       district: district,
-      taluka: taluka,
+      Circle: Circle,
       police: station,
     });
     onNext();
@@ -63,13 +63,13 @@ const SelectStation = ({ onNext, onSelectStation, selectedStation }) => {
             <div className="district__taluko">
               <select
                 className="district__taluko1"
-                onChange={(e) => setTaluka(e.target.value)}
+                onChange={(e) => setCircle(e.target.value)}
                 disabled={selectedStation}
               >
-                <option value="">Select Taluka</option>
+                <option value="">Select Circle</option>
                 {dk
                   ?.find((obj) => obj?.value === district)
-                  ?.talukas?.map((taluko) => (
+                  ?.Circles?.map((taluko) => (
                     <option value={taluko.value} className="option__forform">
                       {taluko.label}
                     </option>
@@ -77,7 +77,7 @@ const SelectStation = ({ onNext, onSelectStation, selectedStation }) => {
               </select>
             </div>
           )}
-          {district && taluka && (
+          {district && Circle && (
             <div className="district__police">
               <select
                 className="district__police1"
@@ -87,7 +87,7 @@ const SelectStation = ({ onNext, onSelectStation, selectedStation }) => {
                 <option value="">Select Station</option>x
                 {dk
                   ?.find((obj) => obj?.value === district)
-                  ?.talukas?.find((obj) => obj?.value === taluka)
+                  ?.Circles?.find((obj) => obj?.value === Circle)
                   ?.stations?.map((police) => (
                     <option value={police.value} className="option__forform">
                       {police.label}

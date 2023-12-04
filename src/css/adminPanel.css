@@ -122,7 +122,7 @@ nav .logo-name .logo_name {
   font-size: 22px;
   font-weight: 600;
   color: var(--text-color);
-  margin-left: 14px;
+  margin-left: 1px;
   transition: var(--tran-05);
 }
 nav.close .logo_name {

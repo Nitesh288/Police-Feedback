@@ -9,7 +9,7 @@ import Table2 from "../../Assets/table2";
 
 const GenerateQRcode = () => {
   const [district, setDistrict] = useState("");
-  const [taluka, setTaluka] = useState("");
+  const [Circle, setCircle] = useState("");
   const [station, setStation] = useState("");
   const [qrValue, setQrValue] = useState("");
   const [isSaving, setIsSaving] = useState(false);
@@ -19,11 +19,11 @@ const GenerateQRcode = () => {
   // Handlers Methods
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!district || !taluka) {
+    if (!district || !Circle) {
       return alert("required...");
     }
 
-    const qrLink = `${config.appUrl}?district=${district}&taluka=${taluka}&station=${station}`;
+    const qrLink = `${config.appUrl}?district=${district}&Circle=${Circle}&station=${station}`;
 
     if (
       !isLoading &&
@@ -54,7 +54,7 @@ const GenerateQRcode = () => {
     setIsSaving(true);
     const payload = {
       district,
-      taluka,
+      Circle,
       station,
       qrValue,
     };
@@ -63,7 +63,7 @@ const GenerateQRcode = () => {
     if (res) {
       alert("QR Code saved successfully");
       setDistrict("");
-      setTaluka("");
+      setCircle("");
       setStation("");
       setQrValue("");
     }
@@ -127,12 +127,12 @@ const GenerateQRcode = () => {
                 <div className="district__taluko">
                   <select
                     className="district__taluko1"
-                    onChange={(e) => setTaluka(e.target.value)}
+                    onChange={(e) => setCircle(e.target.value)}
                   >
-                    <option value="">Select Taluka</option>
+                    <option value="">Select Circle</option>
                     {dk
                       ?.find((obj) => obj?.value === district)
-                      ?.talukas?.map((taluko) => (
+                      ?.Circles?.map((taluko) => (
                         <option
                           value={taluko.value}
                           className="option__forform"
@@ -143,7 +143,7 @@ const GenerateQRcode = () => {
                   </select>
                 </div>
               )}
-              {district && taluka && (
+              {district && Circle && (
                 <div className="district__police">
                   <select
                     className="district__police1"
@@ -152,7 +152,7 @@ const GenerateQRcode = () => {
                     <option value="">Select Station</option>x
                     {dk
                       ?.find((obj) => obj?.value === district)
-                      ?.talukas?.find((obj) => obj?.value === taluka)
+                      ?.Circles?.find((obj) => obj?.value === Circle)
                       ?.stations?.map((police) => (
                         <option
                           value={police.value}
