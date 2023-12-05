@@ -11,7 +11,6 @@ const firebaseConfig = {
   storageBucket: "feedback-system-ef012.appspot.com",
   messagingSenderId: "467922610199",
   appId: "1:467922610199:web:abbb7ee2ab60498a8d5452",
-  measurementId: "G-CJZN3CMEDT"
 };
 
 const app = initializeApp(firebaseConfig);
