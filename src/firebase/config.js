@@ -7,7 +7,6 @@ import { getFirestore } from 'firebase/firestore';
 const firebaseConfig = {
   apiKey: "AIzaSyC9HHnJEbXoeCSTuKr4zcmDS0LKHJ9nEvc",
   authDomain: "feedback-system-ef012.firebaseapp.com",
-  databaseURL: "https://feedback-system-ef012-default-rtdb.firebaseio.com",
   projectId: "feedback-system-ef012",
   storageBucket: "feedback-system-ef012.appspot.com",
   messagingSenderId: "467922610199",
