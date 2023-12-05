@@ -5,12 +5,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC9HHnJEbXoeCSTuKr4zcmDS0LKHJ9nEvc",
-  authDomain: "feedback-system-ef012.firebaseapp.com",
-  projectId: "feedback-system-ef012",
-  storageBucket: "feedback-system-ef012.appspot.com",
-  messagingSenderId: "467922610199",
-  appId: "1:467922610199:web:abbb7ee2ab60498a8d5452"
+  apiKey: "AIzaSyD9f9AjXyhoas3AS8t-IBkuz_8_4oELeig",
+  authDomain: "police-feedback-new.firebaseapp.com",
+  projectId: "police-feedback-new",
+  storageBucket: "police-feedback-new.appspot.com",
+  messagingSenderId: "327028593167",
+  appId: "1:327028593167:web:87580019947d4163fbc97a"
 };
 
 const app = initializeApp(firebaseConfig);
